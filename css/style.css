@@ -1,0 +1,294 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.line {
+  width: 50%;
+  color: grey;
+  margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 40px;
+    list-style-type: none;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.hamburger, .close{
+         display: none;
+   }
+
+@media(max-width: 650px){
+ 	.hamburger, .close{
+         display: block;
+         font-size: 24px;
+         font-family: "Open Sans", "Sanchez";
+
+ 	}
+  .main-nav {
+ 	position: fixed;
+ 	top: -100vh;
+   }
+   nav ul {
+  flex-direction: column;
+  justify-content: flex-start;
+   }
+
+   li {
+     font-size: 20px;
+   }
+ }
+
+    .main-nav.open-nav {
+ 	top: 0;
+ }
+ .back {
+   font-size: 30px;
+   text-align: center;
+ }
+
+ .main-nav.open-nav {
+ 	top: 0;
+ 	left: 0;
+ 	padding: 2% 10%;
+ 	z-index: 2;
+ 	background: #CECCCC;
+ 	width: 100%;
+ 	height: 100vh;
+ }
+
+.navwrapper {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid black;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.navwrapper a {
+  margin: 0 15px;
+  border: 0px solid #CECCCC;
+}
+
+h1 {
+  font-weight: 700;
+}
+.special {
+  text-align: center;
+}
+p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: #565657;
+}
+a:hover {
+  font-weight: 700;
+  color: black;
+}
+
+a:active {
+  font-style: italic;
+}
+
+.copyright {
+  font-size: 11px;
+  padding-top: 40px;
+}
+
+  .fa:hover {
+  color: black;
+}
+
+  footer li {
+    display: inline-block;
+    padding: 20px 20px 0px 0;
+  }
+
+  footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0px 100px 0px 100px;
+    align-items: center;
+  }
+
+ .pmain {
+   /*display:inline-block;*/
+   /*margin-top: 150px;
+   margin-right: 100px;
+   margin-left: 100px;
+   /*width: 50%;*/
+   /*height: 150px;*/
+   text-align: justify;
+   margin-left: 20px;
+ }
+
+  .profileimage {
+    width:350px;
+    /*height:525px;*/
+    /*float:left;*/
+    /*margin-left: 40px;
+    margin-top: 40px;*/
+  }
+
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+  width: 80%;
+  min-width: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.aboutimage {
+  margin-right: 20px;
+}
+
+
+  .NYTimage {
+    /*width:450px;
+    height:260px;*/
+    /*margin-top: 40px;*/
+    /*margin-left: 120px;*/
+  }
+
+  .natobsimage {
+    /*width:450px;
+    height:215px;*/
+    margin-top: 40px;
+    /*margin-left: 140px;
+    margin-right: 100px;*/
+  }
+
+  .voimage {
+    /*margin-top: 40px;*/
+  }
+
+  .mining {
+    /*width:400px;
+    height:474px;*/
+    margin-top: -200px;
+    /*margin-left: 200px;
+    margin-right: 80px;
+    padding-right: 5px;*/
+  }
+
+  .sauimage {
+    /*width:450px;
+    height:257px;*/
+    /*margin-top: 40px;*/
+    /*margin-left: 120px;
+    margin-left: 120px;
+    margin-right: 80px;*/
+  }
+
+  .thunderbird {
+    /*width:450px;
+    height:245px;
+    margin-top: 40px;
+    margin-left: 140px;
+    margin-right: 100px;*/
+  }
+
+  @media (max-width: 620px) {
+    .about {
+      flex-wrap: wrap;
+    }
+
+    .profileimage {
+      width: 100%;
+    }
+}
+
+.imagewrapper {
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*justify-content: space-around;*/
+  /*max-width: 80%;*/
+  width: 80%;
+  /*min-width: 100px;*/
+  margin: 0 auto;
+  /*margin-top: 50px;*/
+  height: 1200px;
+}
+/*
+.imagewrapper a {
+  width: 40%;
+}*/
+
+.imagewrapper img {
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .imagewrapper a {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media (min-width: 400px;) {
+  .imagewrapper a {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.form {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+max-width: 80%;
+width: 80%;
+min-width: 100px;
+/*margin: 0 auto;*/
+margin-top: 20px;
+text-align: justify;
+}
+
+input:focus, textarea:focus {
+  outline-color: grey;
+}
+ input {
+   padding: 10px 20px;
+   margin: 10px 10px 10px 10px;
+ }
+
+ textarea {
+   width: 500px;
+   height: 200px;
+ }
+
+ @media (max-width: 720px) {
+   .pform {
+     width: 80%;
+     flex-wrap: wrap;
+   }
+ }
+.formparagraph {
+  font-size: 16px;
+}
+
+.card {
+  width: 45%;
+  height: 350px;
+  margin: 2%;
+  float: left;
+  overflow: hidden;
+  /*max-height: 400px;*/
+}
